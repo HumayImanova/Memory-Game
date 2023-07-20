@@ -1,22 +1,47 @@
-.card{
-    display: inline-block;
-    width: 200px;
-    height: 30px;
-    background-color: white;
+.card {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  color: transparent;
 }
 
-.container{
-    height: 600px;
-    background-color: antiquewhite;
-    text-align: center;
+.card:hover {
+  border: 2px solid rgb(101, 140, 156);
 }
 
-.row{
-    justify-content: space-evenly;
-    margin-top: 30px;
+.color-hidden {
+  background-color: white;
 }
 
-h1{
-    padding-top: 100px;
-    margin-bottom: 50px;
+.container {
+  height: 600px;
+  background-color: rgb(154, 184, 201);
+  text-align: center;
 }
+
+.row {
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+h1 {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-win {
+  animation: fadeInOut 2s linear;
+}
+
+
+
+
+  
