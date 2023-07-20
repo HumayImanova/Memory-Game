@@ -51,7 +51,7 @@ function disableCards() {
       const h1 = document.querySelector("h1");
       h1.textContent = "You Win!";
       h1.classList.add("animate-win"); 
-    }, 500);
+    }, 1000);
   }
 }
 
@@ -72,6 +72,7 @@ function resetBoard() {
 }
 
 function restartGame() {
+    matchedPairs = 0
     lockBoard = true;
     setTimeout(() => {
       lockBoard = false;
@@ -97,6 +98,7 @@ function restartGame() {
   firstCard = null;
   secondCard = null;
 }
+
 
 
 const restartButton = document.querySelector(".btn-primary");
